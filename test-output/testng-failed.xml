@@ -6,4 +6,14 @@
       <class name="BuynowTest"/>
     </classes>
   </test> <!-- Default test -->
+  <test name="Default test(failed)">
+    <classes>
+      <class name="BuynowTest">
+        <methods>
+          <include name="setup"/>
+          <include name="verify_order_summary"/>
+        </methods>
+      </class> <!-- BuynowTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

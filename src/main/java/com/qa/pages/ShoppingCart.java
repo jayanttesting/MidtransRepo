@@ -48,11 +48,17 @@ public class ShoppingCart extends TestBase {
 
 	public OrderSummary enterdetails_in_shoppingcart() {
 		buynow_button.click();
+		cart_name.clear();
 		cart_name.sendKeys("Jayant");
+		cart_email.clear();
 		cart_email.sendKeys("jayant.gupta93@ymail.com");
+		cart_phonenumber.clear();
 		cart_phonenumber.sendKeys("9650207216");
+		cart_city.clear();
 		cart_city.sendKeys("Pune");
+		cart_address.clear();
 		cart_address.sendKeys("1796, Sector 8");
+		cart_postalcode.clear();
 		cart_postalcode.sendKeys("121006");
 		checkout_button.click();
 

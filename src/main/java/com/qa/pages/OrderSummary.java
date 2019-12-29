@@ -1,6 +1,7 @@
 package com.qa.pages;
 
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -24,8 +25,8 @@ public class OrderSummary extends TestBase {
 	}
 
 	public Payment ordersummay_details() {
-		continue_button.click();
-
+		Actions action = new Actions(driver);
+		action.moveToElement(continue_button).build().perform();
 		return new Payment();
 
 	}

@@ -35,7 +35,7 @@ public class TestBase {
 	public void initialize() {
 		String browsername = prop.getProperty("browser");
 		if (browsername.equals("chrome")) {
-			System.setProperty("webdriver.chrome.driver", "D:/Maven Project/Midtranstest/Resources/chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "D:/Git Repo/MidtransRepo/Resources/chromedriver.exe");
 			driver = new ChromeDriver();
 		}
 		// } else if (browsername.equals("FF"));

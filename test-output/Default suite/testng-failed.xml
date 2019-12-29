@@ -3,17 +3,18 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test verbose="2" name="Default test">
     <classes>
-      <class name="BuynowTest"/>
+      <class name="RunnerTest.BuynowTest"/>
     </classes>
   </test> <!-- Default test -->
   <test name="Default test(failed)">
     <classes>
-      <class name="BuynowTest">
+      <class name="RunnerTest.BuynowTest">
         <methods>
-          <include name="setup"/>
           <include name="verify_order_summary"/>
+          <include name="setup"/>
+          <include name="ordertest"/>
         </methods>
-      </class> <!-- BuynowTest -->
+      </class> <!-- RunnerTest.BuynowTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
